@@ -4,11 +4,10 @@ Open housing connect website and paste the below code in devtool console.
 
 ```javascript
 setInterval(() => {
-  let applyButton = document.getElementsByClassName("button");
-  for (let i = 0; i < applyButton.length; i++) {
-    if (applyButton[i].innerText === "Apply") {
-      applyButton = applyButton[i];
-      applyButton.click();
+  let applyButtons = document.getElementsByClassName("button");
+  for (let i = 0; i < applyButtons.length; i++) {
+    if (applyButtons[i].innerText === "Apply") {
+      applyButtons[i].click();
       break;
     }
   }
